@@ -9,7 +9,7 @@ mysqli_select_db($conn,'$dbname');
 $sql = "DELETE FROM tipo WHERE id_tipo = '$id_tipo'";
 
 if (mysqli_query($conn, $sql))
-	echo "<script>alert('O tipo foi deletado!'); window.location ='consultar_tipo.php'; </script>";
+	echo "<script>alert('Tipo deletado!'); window.location ='consultar_tipo.php'; </script>";
 else
 	echo "<script type='text/javascript'> alert ('Erro ao deletar tipo!'); window.location ='consultar_tipo.php'; </script>";
 

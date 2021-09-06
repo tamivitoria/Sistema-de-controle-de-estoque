@@ -28,12 +28,12 @@ include 'config.php';
 		  <div class="container">
 
 		    <div class="logo float-left">
-		      <h1 class="text-light"><a href="index.php"><span>CONTROLE DE ESTOQUE</span></a></h1>
+		      <h1 class="text-light"><a href=""><span>CONTROLE DE ESTOQUE</span></a></h1>
 		    </div>
 
 		      <nav class="nav-menu float-right d-none d-lg-block">
 		        <ul>
-		          <li class="active"><a href="index.php">Pagina Inicial</a></li>
+		          <li class="active"><a href="">Pagina Inicial</a></li>
 		          <li class="drop-down"><a href="">Cadastrar</a>
 		            <ul>
 		              <li><a href="cadastro_prod.php">Produtos</a></li>

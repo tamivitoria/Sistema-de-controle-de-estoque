@@ -21,7 +21,7 @@ $row = mysqli_num_rows($result);
 
 	<body>
 		
-		<br><br>
+		<br><br><br><br><br><br>
 
 		<h1 style="text-align: center; font-size: 30px;"> Consulta de categorias de produtos </h1>
 		<br>

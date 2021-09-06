@@ -1,0 +1,19 @@
+/*.tudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form{
+    padding: 5%;
+}
+
+.container form{
+    padding: 10%;
+}
+
+body {
+margin: 0px;
+}

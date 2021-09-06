@@ -3,7 +3,7 @@
 include 'includes/header.php';
 
 
-$result = mysqli_query($conn, "SELECT * FROM produto, tipo WHERE id_tipo = tipo_id");
+$result = mysqli_query($conn, "SELECT * FROM produto, tipo WHERE id_tipo = tipo_id ORDER BY tipo ASC");
 $row = mysqli_num_rows($result);
 
 
@@ -28,7 +28,6 @@ $row = mysqli_num_rows($result);
 
 		<table class="table table-bordered">
 			<thead>
-				<th  style="text-align: center;"> Id produto </th>
 				<th  style="text-align: center;"> Nome </th>
 				<th  style="text-align: center;"> Tipo </th>
 				<th  style="text-align: center;"> Quantidades </th>
@@ -44,7 +43,6 @@ $row = mysqli_num_rows($result);
 				while($linha = mysqli_fetch_assoc($result)) {
 			?>
 			<tr>
-				<td><?php echo $linha ['id_produto']; ?></td>
 				<td><?php echo $linha ['nome']; ?></td>
 				<td><?php echo $linha['tipo']; ?></td>				
 				<td><?php echo $linha ['quant']; ?></td>

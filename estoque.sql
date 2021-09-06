@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 06-Set-2021 às 15:14
+-- Tempo de geração: 06-Set-2021 às 15:22
 -- Versão do servidor: 10.4.17-MariaDB
 -- versão do PHP: 7.3.27
 
@@ -28,7 +28,6 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `produto` (
-  `imagem` varchar(100) NOT NULL,
   `id_produto` int(11) NOT NULL,
   `nome` varchar(250) NOT NULL,
   `tipo_id` int(11) NOT NULL,
@@ -41,15 +40,15 @@ CREATE TABLE `produto` (
 -- Extraindo dados da tabela `produto`
 --
 
-INSERT INTO `produto` (`imagem`, `id_produto`, `nome`, `tipo_id`, `quant`, `valor`, `imposto`) VALUES
-('', 1, 'Arroz', 1, 30, '6.50', '11.22'),
-('', 2, 'Farinha de trigo	', 1, 10, '4.00', '17.34'),
-('', 3, 'Sabonete', 2, 10, '3.50', '31.00'),
-('', 4, 'Cerveja', 5, 25, '3.50', '42.00'),
-('', 11, 'Pasta de dentes', 3, 5, '5.00', '31.00'),
-('', 12, 'Álcool 70%', 2, 15, '8.50', '32.00'),
-('', 13, 'Queijo mussarela kg', 1, 3, '30.00', '16.00'),
-('', 14, 'Creme de barbear', 4, 9, '24.30', '57.00');
+INSERT INTO `produto` (`id_produto`, `nome`, `tipo_id`, `quant`, `valor`, `imposto`) VALUES
+(1, 'Arroz', 1, 30, '6.50', '11.22'),
+(2, 'Farinha de trigo	', 1, 10, '4.00', '17.34'),
+(3, 'Sabonete', 2, 10, '3.50', '31.00'),
+(4, 'Cerveja', 5, 25, '3.50', '42.00'),
+(11, 'Pasta de dentes', 3, 5, '5.00', '31.00'),
+(12, 'Álcool 70%', 2, 15, '8.50', '32.00'),
+(13, 'Queijo mussarela kg', 1, 3, '30.00', '16.00'),
+(14, 'Creme de barbear', 4, 9, '24.30', '57.00');
 
 -- --------------------------------------------------------
 

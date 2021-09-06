@@ -41,7 +41,7 @@ $row = mysqli_num_rows($result);
 									<?php
 
 										$conn = mysqli_connect($servidor,$dbusuario,$dbsenha,$dbname);
-										$sql = mysqli_query($conn, "SELECT * FROM `tipo`");
+										$sql = mysqli_query($conn, "SELECT * FROM `tipo` ORDER BY id_tipo ASC");
 									   		while($row = mysqli_fetch_assoc($sql)){
 									    			echo "<option>" .$row['id_tipo']. " - " .$row['tipo']."</option>";
 									    	}

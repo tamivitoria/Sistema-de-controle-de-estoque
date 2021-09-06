@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 06-Set-2021 às 14:31
+-- Tempo de geração: 06-Set-2021 às 15:14
 -- Versão do servidor: 10.4.17-MariaDB
 -- versão do PHP: 7.3.27
 
@@ -44,7 +44,12 @@ CREATE TABLE `produto` (
 INSERT INTO `produto` (`imagem`, `id_produto`, `nome`, `tipo_id`, `quant`, `valor`, `imposto`) VALUES
 ('', 1, 'Arroz', 1, 30, '6.50', '11.22'),
 ('', 2, 'Farinha de trigo	', 1, 10, '4.00', '17.34'),
-('', 3, 'Sabão', 2, 10, '1.00', '0.00');
+('', 3, 'Sabonete', 2, 10, '3.50', '31.00'),
+('', 4, 'Cerveja', 5, 25, '3.50', '42.00'),
+('', 11, 'Pasta de dentes', 3, 5, '5.00', '31.00'),
+('', 12, 'Álcool 70%', 2, 15, '8.50', '32.00'),
+('', 13, 'Queijo mussarela kg', 1, 3, '30.00', '16.00'),
+('', 14, 'Creme de barbear', 4, 9, '24.30', '57.00');
 
 -- --------------------------------------------------------
 
@@ -66,9 +71,7 @@ INSERT INTO `tipo` (`id_tipo`, `tipo`) VALUES
 (5, 'Bebidas'),
 (6, 'Carnes'),
 (4, 'Cosméticos '),
-(7, 'Frios'),
 (3, 'Higiene'),
-(8, 'Laticínios'),
 (2, 'Limpeza');
 
 --
@@ -97,7 +100,7 @@ ALTER TABLE `tipo`
 -- AUTO_INCREMENT de tabela `produto`
 --
 ALTER TABLE `produto`
-  MODIFY `id_produto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_produto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT de tabela `tipo`
